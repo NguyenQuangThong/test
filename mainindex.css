@@ -1,0 +1,31 @@
+.box {
+    position: relative;
+    pointer-events: none; /* Ngăn click trên hộp quà */
+  }
+  
+  .box-body {
+    position: relative;
+    pointer-events: none; /* Ngăn click trên phần thân hộp */
+  }
+  
+  .click-btn {
+    pointer-events: auto; /* Cho phép bấm nút */
+    display: none; /* Ẩn nút mặc định */
+  }
+  
+  .img {
+    width: 200px;
+  }
+  
+  /* Hiển thị nút khi hover vào box */
+  .box:hover .click-btn {
+    display: block; /* Hiện nút khi hover */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Đảm bảo box-lid và box-bowtie không cản trở */
+  .box-lid,
+  .box-bowtie {
+    pointer-events: none; /* Ngăn click trên nắp và nơ */
+  }
